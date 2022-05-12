@@ -7,5 +7,5 @@ const Header = () => {
         </div>
     )
 }
-
+console.log(Header())
 export default Header;
