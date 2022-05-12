@@ -4,7 +4,7 @@ const Cards = ({ star }) => {
     return <div className="ships">
     {star.map((ship) => {
     return <div key={ ship.name }>
-      <h1>{ ship.name }</h1>
+      <h2>{ ship.name }</h2>
     </div>
   })}
   </div>

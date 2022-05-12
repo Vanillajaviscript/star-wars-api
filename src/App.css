@@ -1,0 +1,8 @@
+h2 {
+  display: inline-flex;
+  font-family: "Noto Sans", sans-serif;
+  background-color: rgb(18, 71, 27);
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}

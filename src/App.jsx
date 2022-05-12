@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect} from "react";
-import Cards from "./components/Cards";
-import Header from "./components/Header";
+import Cards from "./components/cards/Cards";
+import Header from "./components/header/Header";
 function App() {
 
 const [star, setStar] = useState([]);
