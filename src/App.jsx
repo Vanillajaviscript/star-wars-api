@@ -7,21 +7,22 @@ import Form from "./components/Form";
 
 function App() {
 const [star, setStar] = useState([]);
-const url = "https://swapi.dev/api/starships/"
+const url = "https://swapi.dev/api/starships/?page=1"
 const getStar = async () => {
   const res = await fetch(url)
   const data = await res.json()
-  setStar(data.results);
+  setStar(data);
   console.log(data);
 }
 useEffect(() => {getStar()}, []);
 
 const inputRef = useRef(null);
 
+
 const handleSubmit = (e) => {
   e.preventDefault();
-  const search = inputRef.current.value
-  setStar(`${url}?page=${search}`)
+  const pageNum = inputRef.current.value
+  setStar(`${url}?page=${pageNum}`)
 }
 
 
