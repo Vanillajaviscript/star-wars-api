@@ -1,8 +1,24 @@
-h2 {
+body {
+  background-color: rgba(128, 128, 128, 0.541);
+  margin: 0;
+}
+.form {
+  padding: 0px 10px;
+}
+.container {
   font-family: 'Roboto Flex', sans-serif;
   background-color: rgb(18, 71, 27);
   color: white;
-  padding: 50px;
+  padding: 10px;
   border-radius: 5px;
-  display:inline-flex;
+  text-align: center;
+}
+
+.ships {
+  display: grid;
+  justify-content: space-around; 
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin: 2em;
 }
