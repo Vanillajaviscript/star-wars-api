@@ -1,7 +1,7 @@
 import './App.css';
 import {useState, useEffect} from "react";
 import Cards from "./components/Cards";
-
+import Header from "./components/Header";
 function App() {
 
 const [star, setStar] = useState([]);
@@ -16,6 +16,7 @@ const getStar = async () => {
 useEffect(() => {getStar()}, []);
 return ( 
   <div className="app">
+    <Header />
     <Cards star={star} />  
   </div>
   )

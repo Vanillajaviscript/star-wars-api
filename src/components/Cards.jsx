@@ -1,10 +1,10 @@
 
 
-const Cards = ({star}) => {
-    return <div className="results">
+const Cards = ({ star }) => {
+    return <div className="ships">
     {star.map((ship) => {
-    return <div key={ship.name}>
-      <h1>{ship.name}</h1>
+    return <div key={ ship.name }>
+      <h1>{ ship.name }</h1>
     </div>
   })}
   </div>
