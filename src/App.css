@@ -15,7 +15,7 @@ body {
   text-align: center;
   border: 1px solid #0000008e;
   box-shadow: 0px 6px 4px 2px rgb(55, 49, 30);
-  animation-duration: 2.5s;
+  animation-duration: 0.5s;
   animation-name: swoop;
 }
   @keyframes swoop {
@@ -24,7 +24,7 @@ body {
     width: 100%;
   }
 
-  100% {
+  65% {
     font-size: 100%;
     margin-top: 10%;
     width: 90%;
