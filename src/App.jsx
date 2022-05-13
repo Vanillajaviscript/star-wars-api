@@ -2,7 +2,7 @@ import './App.css';
 import {useState, useEffect} from "react";
 import Cards from "./components/cards/Cards";
 import Header from "./components/header/Header";
-import Form from "./components/Form";
+import Form from "./components/form/Form";
 
 
 function App() {
@@ -10,7 +10,7 @@ const [url, setUrl] = useState("https://swapi.dev/api/starships/");
 
 const [star, setStar] = useState([]);
 
-const getStar = async () => {
+async function getStar() {
   const res = await fetch(url)
   const data = await res.json()
   setStar(data);

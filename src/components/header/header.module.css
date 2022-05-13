@@ -5,7 +5,8 @@ h1 {
     max-width: 2000px;
     margin: 0;
     color: white;
-    border-Bottom: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(to top, #baa28495, #000000);
+    /* box-shadow: 1px 1px 20px 5px #ff950a; */
     background-color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Roboto Flex', sans-serif;
