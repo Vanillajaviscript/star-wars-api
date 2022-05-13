@@ -6,7 +6,7 @@ import Form from "./components/Form";
 
 
 function App() {
-const [url, setUrl] = useState("https://swapi.dev/api/starships/?page=");
+const [url, setUrl] = useState("https://swapi.dev/api/starships/");
 
 const [star, setStar] = useState([]);
 
