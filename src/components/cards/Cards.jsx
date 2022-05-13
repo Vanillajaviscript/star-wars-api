@@ -1,5 +1,4 @@
 
-
 const Cards = ({ star}) => {
     return <div className="ships">
     {star?.results?.map((ship) => {

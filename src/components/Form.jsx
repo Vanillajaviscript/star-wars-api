@@ -1,19 +1,18 @@
-
+import {useState} from "react";
 const Form = (props) => {
 
+        const [starState, setStarState] = useState(null);
 
-
-return (
-    <div className="form">
-       <h3>Starship pages</h3>
-       <form>
-           <input type="submit" value={1} />
-           <input type="submit" value={2} />
-           <input type="submit" value={3} />
-           <input type="submit" value={4} />
-       </form>
+        const handleClick = () => {
+            props.getStar(starState);
+            setStarState(null)
+        }
+    return (
+    <div className="button">
+        <button onClick={() => handleClick()}>Show next set of ships</button>
+        <a href="*"><button>Back to beginning</button></a> 
     </div>
-)
+    )
 }
 
 export default Form;

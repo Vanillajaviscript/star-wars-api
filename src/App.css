@@ -15,19 +15,19 @@ body {
   text-align: center;
   border: 1px solid #0000008e;
   box-shadow: 0px 6px 4px 2px rgb(55, 49, 30);
-  animation-duration: 1.5s;
-  animation-name: slidein;
+  animation-duration: 2.5s;
+  animation-name: swoop;
 }
-  @keyframes slidein {
+  @keyframes swoop {
   from {
     margin-top: 100%;
     width: 100%;
   }
 
-  65% {
+  100% {
     font-size: 100%;
-    margin-top: 25%;
-    width: 50%;
+    margin-top: 10%;
+    width: 90%;
   }
 
   to {
@@ -54,4 +54,30 @@ h2 {
 
 h6 {
   font-size: 1rem;
+  padding-bottom: 2px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 4px;
+  margin: 20px;
+  background-image: url("https://starwarsblog.starwars.com/wp-content/uploads/2020/04/pov-best-battle_TALL.jpg");
+  width: 100px;
+  height: 100px;
+  color: rgb(247, 179, 9);
+  font-family: 'Roboto Flex', sans-serif;
+  text-align: center;
+  border: 1px solid #dbb51c8e;
+  box-shadow: 0px 6px 4px 2px rgb(55, 49, 30);
+}
+
+@media only screen and (max-width: 1000px) {
+  body, .container {
+    background-color: rgb(196, 185, 34);
+    display: inline-grid;
+  }
 }
